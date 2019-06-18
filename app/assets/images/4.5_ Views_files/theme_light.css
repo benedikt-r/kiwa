@@ -1,0 +1,48 @@
+.cf-nav__container--platform ~ .container-fluid {
+  background: rgb(241, 241, 241);
+}
+
+.step-circle.active {border: 5px white solid;}
+.snap-content {
+  /*background: #E8E8EC;*/
+  background: rgb(241, 241, 241);
+}
+.course_menu_content {
+  background: black;
+}
+
+.course_menu_content h2 {
+	color:#aaaaaa;
+}
+.course_menu_content a {
+  color: #aaaaaa;
+}
+.course_menu_content a:hover {
+  color: white !important;
+}
+.menu_link {
+  color: #aaaaaa !important;
+}
+.menu_link.active {
+  color: #E8E8EC !important;
+}
+.course_menu_text{
+  color: #aaaaaa !important;
+}
+
+.nav-pills a:hover .course_menu_text {
+  color: black !important;
+}
+.nav-pills a .course_menu_dot {
+  background: #aaaaaa; /*matches text color*/
+}
+.nav-pills .active a .course_menu_dot {
+  background: #666666;
+}
+.nav-pills a:hover .course_menu_dot {
+  background: #574048;
+}
+
+.exercise-nav p.step-count {
+  color: black;
+}
