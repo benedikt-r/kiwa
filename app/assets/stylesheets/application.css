@@ -13,3 +13,12 @@
  *= require_tree .
  *= require_self
  */
+ @import 'bootstrap';
+ 
+
+ .navbar-toggler-icon{
+   color:blue;
+ }
+.nav-link {
+  color:blue;
+}

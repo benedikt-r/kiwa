@@ -21,7 +21,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
-  <body><nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <body><nav class="navbar navbar-expand-lg">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -47,7 +47,6 @@
       </li>
     </ul>
     <%= form_with(url: products_path, method: 'get', local: true) do |form| %>
-  <%= form.label :q, 'Search for:' %>
   <%= form.text_field :q, id: 'q', value: params[:q] %>
   <%= form.submit 'Search' %>
 <% end %>
