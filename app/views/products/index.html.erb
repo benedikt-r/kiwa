@@ -5,9 +5,14 @@
 
 
   <div class="container">
-    <div class="row">
       <% @products.each do |product| %>
-       <%= render @products %> 
+       <%= render partial: "product", locals: {product: product} %>
 <% end %>
+</div>
+
+
 <br>
+<br>
+<br>
+
 <%= link_to 'New Product', new_product_path %>
