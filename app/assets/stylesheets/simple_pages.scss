@@ -11,8 +11,6 @@ h1 {
 
 .one {
   text-align: center;
-  width:auto;
-  height:auto;
 }
 
 h3 {
@@ -23,10 +21,10 @@ h3 a:visited{
   color:#717a71;
 }
 .carousel-control-prev {
-  background-color: #fff;
+  background-color: none;
 }
 .carousel-control-next {
-  background-color: #fff;
+  background-color: none;
 }
 .carousel-control-prev-icon,
 .carousel-control-next-icon {

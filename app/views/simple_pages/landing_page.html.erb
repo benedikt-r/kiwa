@@ -8,10 +8,10 @@
       <li data-target="#carousel_landing_page" data-slide-to="2"></li>
     </ol>
 
-    <div class="carousel-inner">
+    <div class="carousel-inner one">
       <% @products.each do |product| %>
       <div class="carousel-item<%= " active" if product == @products.first %>">
-        <p class="one">  <%= image_tag(product.image_url) %></p>
+       <%= image_tag(product.image_url, class:"img-responsive") %>
 <br>
 <br>
         <div class="carousel-caption">
