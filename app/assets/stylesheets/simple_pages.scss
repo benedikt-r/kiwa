@@ -1,8 +1,47 @@
 // Place all the styles related to the simple_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
 h1 {
   font-family:sans-serif;
-  color: green;
+  color: #717a71;
   text-align:center;
+}
+
+
+.one {
+  text-align: center;
+  width:auto;
+  height:auto;
+}
+
+h3 {
+  color:#717a71;
+}
+
+h3 a:visited{
+  color:#717a71;
+}
+.carousel-control-prev {
+  background-color: #fff;
+}
+.carousel-control-next {
+  background-color: #fff;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: black;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: black;
 }

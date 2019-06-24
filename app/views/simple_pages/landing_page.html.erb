@@ -1,5 +1,6 @@
 <div>
   <h1> Featured Products</h1>
+
   <div id="carousel_landing_page" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carousel_landing_page" data-slide-to="0" class="active"></li>
@@ -9,15 +10,17 @@
 
     <div class="carousel-inner">
       <% @products.each do |product| %>
-<div class="carousel-item<%= " active" if product == @products.first %>">
-          <%= image_tag(product.image_url) %>
-
-        <div class="carousel-caption d-none d-md-block">
-          <%= link_to product.name, product %>
+      <div class="carousel-item<%= " active" if product == @products.first %>">
+        <p class="one">  <%= image_tag(product.image_url) %></p>
+<br>
+<br>
+        <div class="carousel-caption">
+        <h3 class="one"><%= link_to product.name, product %></h3>
         </div>
       </div>
       <% end %>
-    </div>
+      </div>
+
 
     <a class="carousel-control-prev" href="#carousel_landing_page" role="button" data-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
