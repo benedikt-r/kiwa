@@ -65,8 +65,12 @@
 
   </div>
 </nav>
-<%= flash[:notice] %>
-
+<% if alert %>
+    <p id="alert" class="alert alert-primary"><%= alert %></p>
+<% end %>
+<% if notice %>
+    <p id="notice" class="alert alert-primary"><%= notice %></p>
+<% end %>
     <%= yield %>
     <footer class="footer">
       <div class="container">
