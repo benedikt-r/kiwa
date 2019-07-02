@@ -1,18 +1,11 @@
-<div class="container-fluid">
-  <div class="col-sm-6 col-md-9">
+<div class="col-sm-2 col-md-6 col-lg-4">
 
-      <div class="card-body">
         <% cache product do %>
-         <%= link_to image_tag(product.image_url, class: "img-fluid product-img"), product_path(product.id) %>
+        <%= link_to image_tag(product.image_url, class: "img-fluid product-img"), product_path(product.id) %>
        <h2><%= link_to product.name, product_path(product.id) %></h2>
        <p><%=product.description %></p>
        <strong><%= number_to_currency(product.price, class:"price", unit: "€") %></strong>
  <% end %>
        <br>
 
-
-
-</div>
- </div>
-</div>
 </div><!-- /col -->
