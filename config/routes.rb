@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
   devise_for :users, path: '', path_names: { sign_in: 'login', sign_out: 'logout' }
-  resources :users
   resources :orders, only: [:index, :show, :create, :destroy]
-  resources :products
+  resources :products do
+  resources :comments
+  end
+  resources :users
   get 'simple_pages/about'
   get 'simple_pages/contact'
   get 'simple_pages/index'
