@@ -43,6 +43,13 @@
         </div>
 
         <div class="col-12 form-group">
+          <h5><%= form.label :color %></h5>
+          <div class="col-12 product-form">
+            <%= form.text_area :color, rows: "3" %>
+          </div>
+        </div>
+
+        <div class="col-12 form-group">
           <h5><%= form.label :image_url %></h5>
           <div class="col-12 product-form">
             <%= form.text_field :image_url %>
