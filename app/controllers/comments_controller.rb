@@ -1,4 +1,5 @@
 class CommentsController < ApplicationController
+  load_and_authorize_resource
   def create
    @product = Product.find(params[:product_id])
    @comment = @product.comments.new(comment_params)
@@ -13,11 +14,15 @@ class CommentsController < ApplicationController
        format.html { redirect_to @product, alert: 'Review was not saved successfully.' }
        format.json { render json: @comment.errors, status: :unprocessable_entity }
    end
-   
+
  end
 end
 
   def destroy
+    @comment = Comment.find(params[:id])
+    product = @comment.product
+    @comment.destroy
+    redirect_to product
   end
 
 
